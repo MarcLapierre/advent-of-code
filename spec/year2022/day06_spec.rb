@@ -8,7 +8,7 @@ RSpec.describe Year2022::Day06 do
 
   it "solves part2" do
     d = Year2022::Day06.new
-    expect(d.part2('some_input')).to eq(nil)
+    expect(d.part2(input)).to eq(19)
   end
 
   private
