@@ -32,6 +32,10 @@ module Year2023
             # check if the entire sequence fits
             offset = start - sequence[SOURCE]
             if start + range <= offset + sequence[COUNT]
+              # it fits
+            else
+              #it doesn't
+            end
           else
             # no sequence found, so we need to create one
           end
