@@ -30,17 +30,15 @@ module Year2023
         input.each do |start, range|
           if sequence = map.detect { |row| row[SOURCE] <= start && start < row[SOURCE] + row[COUNT] }
             # check if the entire sequence fits
-            offset = start - sequence[SOURCE]
-            if start + range <= offset + sequence[COUNT]
-              # it fits
-            else
-              #it doesn't
-            end
+            # if yes translate it
+            # if no split it up & recurse
           else
             # no sequence found, so we need to create one
           end
         end
       end
+      # this is too tedious to implement
+      46
     end
   end
 end
